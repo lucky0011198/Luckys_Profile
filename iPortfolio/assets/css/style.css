@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #040b14;
+  background: #000000a9;
   overflow-y: auto;
 }
 
@@ -82,6 +82,8 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   width: 120px;
   border: 8px solid #2c2f3f;
+
+
 }
 
 #header .profile h1 {
@@ -220,7 +222,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero:before {
   content: "";
-  background: rgba(5, 13, 24, 0.3);
+  background: rgba(5, 13, 24, 0.267);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -290,9 +292,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
-  .mobile-nav-toggle{
-    display: none;
-  }
+
   .hero-container{
     width: 100%;
     text-align: center;
