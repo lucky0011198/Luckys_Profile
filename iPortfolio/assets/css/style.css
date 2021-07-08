@@ -73,8 +73,11 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #000000a9;
+  background: #ffffffdf;
   overflow-y: auto;
+}
+span:hover{
+  color: #000;
 }
 
 #header .profile img {
@@ -97,14 +100,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .profile h1 a, #header .profile h1 a:hover {
-  color: #fff;
+  color: rgb(0, 3, 3);
   text-decoration: none;
 }
 
 #header .profile .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #212431;
+  background: #90d3ff;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -113,12 +116,13 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   width: 36px;
   height: 36px;
+  box-shadow: #000;
   transition: 0.3s;
 }
 
 #header .profile .social-links a:hover {
   background: #149ddd;
-  color: #fff;
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
