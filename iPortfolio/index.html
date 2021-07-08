@@ -77,8 +77,8 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="row">
-      <div class=" container hero-container col-sm-4" data-aos="fade-in">
+    <div class="container-fluid">
+      <div class=" container-fluid hero-container  ml-2" data-aos="fade-in">
         <div class="row">
           <div class="col-sm-2">
             <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="white" class="bi bi-person-circle i"
@@ -109,30 +109,36 @@
             <a href=""><i class="bi bi-box-arrow-up-right" style="float:right;"></i></a>
           </div>
         </div>
-        <div class="container mt-5 d-flex git ">
-          <div class="card p-3">
-            <div class="d-flex align-items-center">
-              <div class="image"> <img
-                  src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
-                  class="rounded" width="155"> </div>
-              <div class="mr-4 w-100 text-align ">
-                <h4 class="mb-0 mt-0 ml-3">Alex Morrision</h4> <span>Senior Journalist</span>
-                <div class="p-2 mt-2 bg-primary d-flex justify-content-between rounded text-white stats">
-                  <div class="d-flex flex-column"> <span class="articles">Articles</span> <span
-                      class="number1">38</span>
+        <div class="row bi-text-center justify-content-center align-content-sm-center  ">
+          <div class="mt-5 d-flex git col ">
+            <div class="card p-2 w-100 bg-transparent">
+              <div class="d-flex align-items-center ">
+                <div class="image m-3"> <img src="assets/img/favicon.jpg" class="rounded m-0" width="120"> </div>
+                <div class="mr-4 w-100 text-align ">
+                  <h4 class="mb-0 mt-0 ml-3">Alex Morrision</h4> <span>Senior Journalist</span>
+                  <div class="p-2 mt-2 bg-primary d-flex justify-content-between rounded text-white stats">
+                    <div class="d-flex flex-column"> <span class="articles">Articles</span> <span
+                        class="number1">38</span>
+                    </div>
+                    <div class="d-flex flex-column"> <span class="followers">Followers</span> <span
+                        class="number2">980</span> </div>
+                    <div class="d-flex flex-column"> <span class="rating">Rating</span> <span class="number3">8.9</span>
+                    </div>
                   </div>
-                  <div class="d-flex flex-column"> <span class="followers">Followers</span> <span
-                      class="number2">980</span> </div>
-                  <div class="d-flex flex-column"> <span class="rating">Rating</span> <span class="number3">8.9</span>
-                  </div>
+                  <div class="button mt-2 d-flex flex-row align-items-center"> <button
+                      class="btn btn-sm btn-outline-primary w-100 m-2">Chat</button> <button
+                      class="btn btn-sm btn-primary w-100 ml-2">Follow</button> </div>
                 </div>
-                <div class="button mt-2 d-flex flex-row align-items-center"> <button
-                    class="btn btn-sm btn-outline-primary w-100 m-2">Chat</button> <button
-                    class="btn btn-sm btn-primary w-100 ml-2">Follow</button> </div>
               </div>
             </div>
+
           </div>
-          <div class="col">
+          <div class=" d-flex  git col">
+            <div class="card p-3 w-100 bg-transparent">
+              <div class="d-flex align-items-center">
+
+              </div>
+            </div>
 
           </div>
         </div>
@@ -895,7 +901,409 @@
       </div>
     </section><!-- End Contact Section -->
 
+
   </main><!-- End #main -->
+
+
+
+  <div class="menu">
+    <nav class="menu__nav">
+      <!--ul class="menu__list r-list">
+        <li class="menu__group">
+          <a href="index.html"><i class="bx bx-home"></i><span>Home</span></a>
+        </li>
+        <li class="menu__group">
+          <a href="#0" class="menu__link r-link">About me</a>
+        </li>
+        <li class="menu__group">
+          <a href="#0" class="menu__link r-link">Services</a>
+        </li>
+        <li class="menu__group">
+          <a href="#0" class="menu__link r-link">Portfolio</a>
+        </li>
+        <li class="menu__group">
+          <a href="#0" class="menu__link r-link">Blog</a>
+        </li>
+        <li class="menu__group">
+          <a href="#0" class="menu__link r-link">Contacts</a>
+        </li>
+      </ul-->
+      <nav class="nav-menu nobita">
+        <ul class="menu__list r-list">
+          <li class="active"><a href="index.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#contact"><i class="bx bx-envelope"></i> Contact</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </nav>
+    <button class="menu__toggle r-button" type="button">
+      <span class="menu__hamburger m-hamburger">
+        <span class="m-hamburger__label">
+          <span class="menu__toggle-hint screen-reader">Open menu</span>
+        </span>
+      </span>
+    </button>
+  </div>
+  <style>
+    /*
+!!! This demo is being refactored !!!
+
+-- add auto focus on the first item of the navigation when it is shown
+-- replace .menu:not(.menu_activated) .menu__list{  display: none; } to hidden
+-- use :is pseudo-class to simplify selectors
+
+*/
+    /*
+=====
+DEPENDENCES
+=====
+*/
+
+    /* The component will reset button browser styles */
+
+    .r-button {
+      --uirButtonBackgroundColor: var(--rButtonBackgroundColor, transparent);
+      --uirButtonPadding: var(--rButtonPadding, var(--rButtonPaddingTop, 0) var(--rButtonPaddingRight, 0) var(--rButtonPaddingBottom, 0) var(--rButtonPaddingLeft, 0));
+      --uirButtonBorderWidth: var(--rButtonBorderWidth, 0);
+      --uirButtonBorderStyle: var(--rButtonBorderStyle, solid);
+      --uirButtonBorderColor: var(--rButtonBorderColor, currentColor);
+      --uirButtonFontFamily: var(--rButtonFontFamily, inherit);
+      --uirButtonFontSize: var(--rButtonFontSize, inherit);
+      --uirButtonColor: var(--rButtonColor);
+
+      background-color: var(--uirButtonBackgroundColor);
+      padding: var(--uirButtonPadding);
+
+      border-width: var(--uirButtonBorderWidth);
+      border-style: var(--uirButtonBorderStyle);
+      border-color: var(--uirButtonBorderColor);
+
+      cursor: pointer;
+
+      font-family: var(--uirButtonFontFamily);
+      font-size: var(--uirButtonFontSize);
+    }
+
+    .r-button::-moz-focus-inner,
+    .r-button[type="button"]::-moz-focus-inner,
+    .r-button[type="reset"]::-moz-focus-inner,
+    .r-button[type="submit"]::-moz-focus-inner {
+
+      /* Remove the inner border and padding in Firefox. */
+
+      border-style: none;
+      padding: 0;
+    }
+
+    /* The component will reset browser's styles of link */
+
+    .r-link {
+      --uirLinkDisplay: var(--rLinkDisplay, inline-flex);
+      --uirLinkTextColor: var(--rLinkTextColor);
+      --uirLinkTextDecoration: var(--rLinkTextDecoration, none);
+
+      display: var(--uirLinkDisplay) !important;
+      color: var(--uirLinkTextColor) !important;
+      text-decoration: var(--uirLinkTextDecoration) !important;
+    }
+
+    /* The component will reset browser's styles of list */
+
+    .r-list {
+      --uirListPaddingLeft: var(--rListPaddingLeft, 0);
+      --uirListMarginTop: var(--rListMarginTop, 0);
+      --uirListMarginBottom: var(--rListMarginBottom, 0);
+      --uirListListStyle: var(--rListListStyle, none);
+
+      padding-left: var(--uirListPaddingLeft) !important;
+      margin-top: var(--uirListMarginTop) !important;
+      margin-bottom: var(--uirListMarginBottom) !important;
+      list-style: var(--uirListListStyle) !important;
+    }
+
+    /* Basic styles of the hamburger component */
+
+    .m-hamburger {
+      --uiHamburgerThickness: var(--hamburgerThickness, 4px);
+
+      display: var(--hamburgerDisplay, inline-flex);
+      width: var(--hamburgerWidth, 28px);
+      height: var(--hamburgerHeight, 20px);
+
+      position: relative;
+    }
+
+    .m-hamburger::before,
+    .m-hamburger::after,
+    .m-hamburger__label {
+      width: 100%;
+      height: var(--uiHamburgerThickness);
+      border-radius: var(--hamburgerBorderRadius, 5px);
+      background-color: var(--hamburgerBackgroundColor, currentColor);
+
+      position: absolute;
+      left: 0;
+    }
+
+    .m-hamburger::before,
+    .m-hamburger::after {
+      content: "";
+    }
+
+    .m-hamburger::before {
+      top: 0;
+    }
+
+    .m-hamburger::after {
+      bottom: 0;
+    }
+
+    .m-hamburger__label {
+      /* The calculation of middle hamburger button line position */
+
+      top: calc(50% - calc(var(--uiHamburgerThickness) / 2));
+    }
+
+    /* helper to hide elements that are available only for screen readers. */
+
+    .screen-reader {
+      width: var(--screenReaderWidth, 1px) !important;
+      height: var(--screenReaderHeight, 1px) !important;
+      padding: var(--screenReaderPadding, 0) !important;
+      border: var(--screenReaderBorder, none) !important;
+
+      position: var(--screenReaderPosition, absolute) !important;
+      clip: var(--screenReaderClip, rect(1px, 1px, 1px, 1px)) !important;
+      overflow: var(--screenReaderOverflow, hidden) !important;
+    }
+
+    /*
+=====
+MENU STYLES
+=====
+*/
+
+    .menu {
+      --uiMenuCircleSize: var(--menuCircleSize, 6.25rem);
+      --uiMenuCircleOffset: var(--menuCircleOffset, 1rem);
+      --uiMenuCircleHeight: calc(var(--uiMenuCircleSize) / 2);
+      --uiMenuCircleBackgroundColor: var(--menuCircleBackgroundColor, currentColor);
+
+      --uiMenuHamburgerWidth: var(--menuHamburgerWidth, 1.75rem);
+      --uiMenuHamburgerHeight: var(--menuHamburgerHeight, 1.25rem);
+
+      --rButtonPaddingTop: calc(var(--uiMenuCircleHeight) - var(--uiMenuHamburgerHeight) - var(--uiMenuCircleOffset));
+
+      --hamburgerWidth: var(--uiMenuHamburgerWidth);
+      --hamburgerHeight: var(--uiMenuHamburgerHeight);
+      --hamburgerBackgroundColor: var(--menuHamburgerBackgroundColor, #fff);
+
+      width: 100%;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: fixed;
+      justify-content: center;
+      bottom: 0;
+      left: 0;
+      z-index: var(--menuZindex, 9998);
+    }
+
+    .menu__nav {
+      box-sizing: border-box;
+      width: 100%;
+      height: 0;
+
+      transition: opacity .2s ease-out;
+      opacity: 0;
+
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      z-index: 2;
+    }
+
+    .menu__list {
+      width: 100%;
+      max-height: 100%;
+
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .menu__toggle {
+      box-sizing: border-box;
+      width: var(--uiMenuCircleSize);
+      height: var(--uiMenuCircleHeight);
+      flex: none;
+
+      position: relative;
+    }
+
+    .menu__toggle::before {
+      /*
+  1. The font-size property is used to simplify calculations of the element's sizes and position
+  2. The negative value for the bottom property need for hiding half of circle.
+  */
+
+      content: "";
+      width: 1em;
+      height: 1em;
+      font-size: var(--uiMenuCircleSize);
+      /* 1 */
+
+      background-color: var(--uiMenuCircleBackgroundColor);
+      border-radius: 50%;
+
+      position: absolute;
+      bottom: -.5em;
+      /* 2 */
+      left: calc(50% - .5em);
+      z-index: -1;
+
+      will-change: width, height;
+      transition: transform .25s cubic-bezier(0.04, -0.1, 0.29, 0.98),
+        width .25s cubic-bezier(0.04, -0.1, 0.29, 0.98),
+        height .25s cubic-bezier(0.04, -0.1, 0.29, 0.98);
+    }
+
+    /* styles of hamburger's animation */
+
+    .m-hamburger::before,
+    .m-hamburger::after,
+    .m-hamburger__label {
+      transition-timing-function: ease;
+      transition-duration: .15s;
+    }
+
+    .m-hamburger::before,
+    .m-hamburger::after {
+      transition-property: transform;
+    }
+
+    .m-hamburger__label {
+      transition-property: transform, opacity;
+    }
+
+    /*
+=====
+MENU STATES
+=====
+*/
+
+    .menu__toggle:focus {
+      outline: var(--menuHaburgerOutlineOWidth, 2px) solid var(--menuHaburgerOutlineColor);
+      outline-offset: var(--menuHaburgerOutlineOffset, 5px);
+    }
+
+    .menu_activated {
+      height: 100%;
+    }
+
+    .menu_activated .menu__nav {
+      flex-grow: 1;
+      opacity: 1;
+
+      will-change: opacity;
+      transition-duration: .2s;
+      transition-delay: .3s;
+    }
+
+    .menu_activated .menu__toggle::before {
+      width: 100vmax;
+      height: 100vmax;
+      transform: translate3d(-50vh, -50vh, 0) scale(5);
+      transition-duration: 1s;
+    }
+
+    .menu:not(.menu_activated) .menu__list {
+      display: none;
+    }
+
+    .menu_activated .m-hamburger::before {
+      top: 50%;
+      transform: translate3d(0, -50%, 0) rotate(45deg);
+    }
+
+    .menu_activated .m-hamburger::after {
+      transform: translate3d(0, -50%, 0) rotate(135deg);
+      top: 50%;
+    }
+
+    .menu_activated .m-hamburger__label {
+      transform: rotate(-45deg) translate3d(-.285em, -.3em, 0);
+      opacity: 0;
+    }
+
+    /*
+=====
+SETTINGS
+=====
+*/
+
+    :root {
+      --colorWhite: #fff;
+      --colorMain: #000000ad;
+      --menuCircleBackgroundColor: var(--colorMain);
+      --menuHamburgerBackgroundColor: var(--colorWhite);
+      --menuHaburgerOutlineColor: var(--colorMain);
+    }
+
+    .menu_activated {
+      --menuHaburgerOutlineColor: var(--colorWhite);
+    }
+
+    /*
+=====
+DEMO
+=====
+*/
+
+
+    .nobita {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+
+    }
+
+
+    .page {
+      max-width: 380px;
+      padding: 1rem;
+      margin: auto;
+      text-align: center;
+    }
+
+    .page__name {
+      display: block;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    .page__hint {
+      display: block;
+      line-height: 1.45;
+      margin-top: 1rem;
+    }
+
+    .menu__group {
+      --rLinkTextColor: var(--colorWhite);
+
+      padding: .5rem 2rem;
+      font-size: 2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    a {
+      color: #fff;
+      text-align: center;
+    }
+  </style>
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
@@ -908,12 +1316,73 @@
       </div>
     </div>
     </div>
-  </footer><!-- End  Footer -->
+  </footer>
+  <!-- End  Footer >
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <a href="#about" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a-->
 
   <!-- Vendor JS Files -->
+  <script>
+    /*
+!!!!!
+This code is created to display element's behavior. I'm not a JS expert so don't use it
+!!!!!
+*/
+
+
+    (function () {
+      'use strict';
+
+      class Menu {
+        constructor(settings) {
+          this.menuRootNode = settings.menuRootNode;
+          this.isOpened = false;
+        }
+
+        changeMenuState(menuState) {
+          return this.isOpened = !menuState;
+        }
+
+        changeToggleHint(toggleHint, toggleNode) {
+          toggleNode.textContent = toggleHint;
+          return toggleHint;
+        }
+      }
+
+      const menuClassesNames = {
+        rootClass: 'menu',
+        activeClass: 'menu_activated',
+        toggleClass: 'menu__toggle',
+        toggleHintClass: 'menu__toggle-hint'
+      }
+
+      const jsMenuNode = document.querySelector(`.${menuClassesNames.rootClass}`);
+      const demoMenu = new Menu({
+        menuRootNode: jsMenuNode
+      });
+
+      function getCurrentToggleHint(currentMenuState) {
+        return (currentMenuState !== true) ? 'Open menu' : 'Close menu';
+      }
+
+      function toggleMenu(event) {
+
+        let currentMenuState = demoMenu.changeMenuState(demoMenu.isOpened);
+        let toggleHint = getCurrentToggleHint(currentMenuState);
+
+        demoMenu.changeToggleHint(
+          toggleHint,
+          demoMenu.menuRootNode.querySelector(`.${menuClassesNames.toggleHintClass}`)
+        );
+        demoMenu.menuRootNode.classList.toggle(`${menuClassesNames.activeClass}`);
+
+        return currentMenuState;
+      }
+
+      jsMenuNode.querySelector(`.${menuClassesNames.toggleClass}`).addEventListener('click', toggleMenu);
+    })();
+  </script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>

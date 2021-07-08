@@ -138,13 +138,15 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 /* Desktop Navigation */
 .nav-menu {
-  padding: 30px 0 0 0;
+  padding: 40px 0 0 0;
 }
 
 .nav-menu * {
   margin: 0;
   padding: 0;
   list-style: none;
+
+
 }
 
 .nav-menu > ul > li {
@@ -232,8 +234,6 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 2;
   min-width: 400px;
   padding: 3%;
-
-
 }
 
 
@@ -290,6 +290,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
+  .mobile-nav-toggle{
+    display: none;
+  }
   .hero-container{
     width: 100%;
     text-align: center;
@@ -299,18 +302,23 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     margin-left: 10%;
   }
+  .image{
+    margin-right: 10%;
+  }
   .i{
     fill: #000;
     display: none;
   }
   .box2{
     width: 140px;
-
-
+  }
+  .git{
+    margin-left: 13%;
   }
   #hero
   {
     height:100vh;
+    width: 100%;
   }
   #hero h1 {
     font-size: 28px;
@@ -1098,6 +1106,7 @@ section {
   .breadcrumbs ol li {
     display: inline-block;
   }
+
 }
 
 /*--------------------------------------------------------------
@@ -1136,22 +1145,27 @@ section {
 
 /*-----------github profile card---------*/
 .git{
-  justify-content: space-between;
-  margin-left: 10%;
+  margin-left: 0%;
+  width:100%;
+color:white;
+
 
 }
 
 .card .list {
-  width: 400px;
+  width: 600px;
   border: none;
   border-radius: 10px;
-  background-color: #fff;
-  margin:10px
+  background-color: rgba(255, 255, 255, 0);
+  background-color:none;
+  margin:10px;
+
 }
 
 .stats {
-  background: #f2f5f8 !important;
-  color: #000 !important;
+  /**/background: #f2f5f810 !important;
+
+  color: rgb(255, 255, 255) !important;
   margin:10px
 }
 
@@ -1168,7 +1182,7 @@ section {
 
 .followers {
   font-size: 10px;
-  color: #a1aab9
+  color: #ffffff
 }
 
 .number2 {
@@ -1186,7 +1200,7 @@ section {
 /*=============================================*/
 
 .list{
-  border: solid 2px white;
+  border: solid 2px rgba(255, 255, 255, 0);
   width: 30%;
   float:left;
 
