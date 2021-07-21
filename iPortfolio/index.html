@@ -28,58 +28,100 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/css/uikit.min.css" />
 
-  <!-- =======================================================
-  * Template Name: iPortfolio - v3.3.0
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/js/uikit-icons.min.js"></script>
+
 </head>
 
 <body>
 
   <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
 
   <!-- ======= Header ======= -->
   <header id="header">
-    <div class="d-flex flex-column">
 
-      <div class="profile">
-        <img src="assets/img/favicon.jpg" alt="" class="img-fluid rounded-circle">
-        <p class="text-center" style="color:#587d8f;"><b>Laxmikant varkal</b></p>
-        <div class="social-links mt-3 text-center">
-          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="https://www.facebook.com/ganesh.varkal.3" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/laxmikantvarkal32019/" class="instagram"><i
-              class="bx bxl-instagram"></i></a>
-          <a href="https://github.com/lucky0011198" class="google-plus"><i class="bx bxl-github"></i></a>
-          <a href="https://www.linkedin.com/in/laxmikant-varkal-489a8a1a5/" class="linkedin"><i
-              class="bx bxl-linkedin"></i></a>
+
+    <div class="d-flex flex-column">
+      <br>
+      <br>
+      <br>
+      <div class="uk-grid-small uk-flex-middle" uk-grid>
+        <div class="uk-width-auto">
+          <img class="uk-border-circle" width="40" height="40" src="images/avatar.jpg">
+        </div>
+        <div class="uk-width-expand">
+          <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
+          <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time>
+          </p>
         </div>
       </div>
-
       <nav class="nav-menu">
         <ul>
           <li class="active"><a href="index.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
           <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
           <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#contact"><i class="bx bx-envelope"></i> Contact</a></li>
+          <li><a href="#contact"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
 
 
         </ul>
       </nav><!-- .nav-menu -->
-      <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
+
+
+
+      <div id="offcanvas-usage" uk-offcanvas>
+        <div class="uk-offcanvas-bar">
+
+          <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+          <div class="uk-grid-small uk-flex-middle" uk-grid>
+            <div class="uk-width-auto">
+              <img class="uk-border-circle" width="40" height="40" src="images/avatar.jpg">
+            </div>
+            <div class="uk-width-expand">
+              <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
+              <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time>
+              </p>
+            </div>
+          </div>
+          <nav class="nav-menu">
+            <ul>
+              <li class="active"><a href="index.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
+              <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
+              <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+              <li><a href="#contact"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+
+
+            </ul>
+          </nav><!-- .nav-menu -->
+        </div>
+      </div>
     </div>
-  </header><!-- End Header -->
+    <!--div class="profile">
+      <img src="assets/img/favicon.jpg" alt="" uk-parallax="bgy: -200" class="img-fluid rounded-circle->
+        <p class="text-center" style="color:#587d8f;"><b>Laxmikant varkal</b></p>
+      <div class="social-links mt-3 text-center">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.facebook.com/ganesh.varkal.3" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/laxmikantvarkal32019/" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="https://github.com/lucky0011198" class="google-plus"><i class="bx bxl-github"></i></a>
+        <a href="https://www.linkedin.com/in/laxmikant-varkal-489a8a1a5/" class="linkedin"><i
+            class="bx bxl-linkedin"></i></a>
+      </div>
+    </div--->
+  </header>
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="container-fluid">
-      <div class=" container-fluid hero-container  ml-2" data-aos="fade-in">
-        <div class="row">
+    <div class="container">
+
+      <div class=" container hero-container " data-aos="fade-in">
+        <div class="row ">
           <div class="col-sm-2">
             <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="white" class="bi bi-person-circle i"
               viewBox="0 0 16 16">
@@ -88,11 +130,14 @@
                 d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
             </svg>
           </div>
+
+
           <div class="col-sm-8">
             <h1> Laxmikant varkal</h1>
             <p>I'm <span class="typed" data-typed-items="programmer,web Developer,web Designer ,web designer "></span>
             </p>
           </div>
+
         </div>
         <div class="row s">
           <div class="col-sm-3 box2">
@@ -109,39 +154,9 @@
             <a href=""><i class="bi bi-box-arrow-up-right" style="float:right;"></i></a>
           </div>
         </div>
-        <div class="row bi-text-center justify-content-center align-content-sm-center  ">
-          <div class="mt-5 d-flex git col ">
-            <div class="card p-2 w-100 bg-transparent">
-              <div class="d-flex align-items-center ">
-                <div class="image m-3"> <img src="assets/img/favicon.jpg" class="rounded m-0" width="120"> </div>
-                <div class="mr-4 w-100 text-align ">
-                  <h4 class="mb-0 mt-0 ml-3">Alex Morrision</h4> <span>Senior Journalist</span>
-                  <div class="p-2 mt-2 bg-primary d-flex justify-content-between rounded text-white stats">
-                    <div class="d-flex flex-column"> <span class="articles">Articles</span> <span
-                        class="number1">38</span>
-                    </div>
-                    <div class="d-flex flex-column"> <span class="followers">Followers</span> <span
-                        class="number2">980</span> </div>
-                    <div class="d-flex flex-column"> <span class="rating">Rating</span> <span class="number3">8.9</span>
-                    </div>
-                  </div>
-                  <div class="button mt-2 d-flex flex-row align-items-center"> <button
-                      class="btn btn-sm btn-outline-primary w-100 m-2">Chat</button> <button
-                      class="btn btn-sm btn-primary w-100 ml-2 ">Follow</button> </div>
-                </div>
-              </div>
-            </div>
 
-          </div>
-          <div class=" d-flex  git col">
-            <div class="card p-3 w-100 bg-transparent">
-              <div class="d-flex align-items-center">
 
-              </div>
-            </div>
 
-          </div>
-        </div>
 
 
       </div>
@@ -199,15 +214,17 @@
 
   </section><!-- End Hero -->
 
-  <main id="main">
 
+  <main id="main">
+    <button class="menubutton" style="position:fixed; top:2%;left:80% ;z-index:999999999"
+      uk-toggle="target: #offcanvas-usage">
+      open</button>
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container">
-
         <div class="section-title">
           <h2>About</h2>
-          <p>Hello, My name is Laxmikant Varkal. My nickname is Lucky and I have
+          <p class="uk-text-muted">Hello, My name is Laxmikant Varkal. My nickname is Lucky and I have
             completed my diploma in Electronics and Telecommunication Engg. Now I'm pursuing through Third Year of B.
             Tech. Electronics Engineering.</p>
         </div>
@@ -239,92 +256,236 @@
                 </ul>
               </div>
             </div>
-            <p>
 
-            </p>
           </div>
         </div>
 
       </div>
+      <br>
+      <br>
+      <div class="uk-child-width-1-2@s" uk-grid>
+        <div>
+          <div class="uk-card uk-card-default uk-card-medium  uk-card-body">
+            <div class="uk-card-header">
+              <div class="uk-grid-small uk-flex-middle" uk-grid>
+                <div class="uk-width-auto">
+                  <img class="uk-border-circle" width="40" height="40" src="images/avatar.jpg">
+                </div>
+                <div class="uk-width-expand">
+                  <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
+                  <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="uk-card-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+            <div class="uk-card-footer">
+              <a href="#" class="uk-button uk-button-text">Read more</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-default uk-card-medium uk-card-body">
+            <div class="uk-card-header">
+              <div class="uk-grid-small uk-flex-middle" uk-grid>
+                <div class="uk-width-auto">
+                  <img class="uk-border-circle" width="40" height="40" src="images/avatar.jpg">
+                </div>
+                <div class="uk-width-expand">
+                  <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
+                  <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="uk-card-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+            <div class="uk-card-footer">
+              <a href="#" class="uk-button uk-button-text">Read more</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <br><br>
+      <div class="container-fluid">
+
+        <ul uk-tab>
+          <li><a href="#"> <i class="bi bi-person" style="font-size: large;"></i> Github profile</a></li>
+          <li><a href="#"> <i class="bi bi-file-earmark-code" style="font-size: large;"></i> Repositories</a></li>
+          <li><a href="#"><i class="bi bi-chat-left-text" style="font-size: large;"></i> Comments</a></li>
+        </ul>
+
+        <ul class="uk-switcher uk-margin">
+          <li>
+            <br>
+            <br>
+            <article class="uk-comment uk-comment-primary">
+              <header class="uk-comment-header">
+                <div class="uk-grid-medium uk-flex-middle" uk-grid>
+                  <div class="uk-width-auto">
+                    <img class="uk-comment-avatar" src="images/avatar.jpg" width="80" height="80" alt="">
+                  </div>
+                  <div class="uk-width-expand">
+                    <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Author</a></h4>
+                    <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+                      <li><a href="#">12 days ago</a></li>
+                      <li><a href="#">Reply</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </header>
+              <div class="uk-comment-body">
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                  labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                  et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+              </div>
+            </article>
+          </li>
+          <li>
+            <div style="text-align:center ">
+              <div class="uk-width-1-2@s w-100">
+                <ul class="uk-nav-default uk-nav-parent-icon " uk-nav="multiple: true">
+                  <li class="uk-active"><a href="#"><br>
+                      <br>
+                      <h4> <i class="bi bi-github"></i> Github Repositories</h4>
+
+                    </a></li>
+                  <hr>
+                  <li class="uk-parent">
+                    <a href="#"> <i class="bi bi-file-code" style="font-size: large;color:rgb(0, 119, 255)"></i>
+                      Static-website
+                      Repositories</a>
+                    <ul class="uk-nav-sub">
+                      <table class="uk-table uk-table-divider">
+                        <thead>
+                          <tr>
+                            <th>Table Heading</th>
+                            <th>Table Heading</th>
+                            <th>Table Heading</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Table Data</td>
+                            <td>Table Data</td>
+                            <td>Table Data</td>
+                          </tr>
+                          <tr>
+                            <td>Table Data</td>
+                            <td>Table Data</td>
+                            <td>Table Data</td>
+                          </tr>
+                          <tr>
+                            <td>Table Data</td>
+                            <td>Table Data</td>
+                            <td>Table Data</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </ul>
+                  </li>
+                  <br>
+                  <li class="uk-parent">
+                    <a href="#"> <i class="bi bi-hdd-stack" style="font-size: large;color:rgb(15, 98, 253)"></i>
+                      Dynamic-website
+                      Repositories</a>
+                    <ul class="uk-nav-sub">
+                      <li><a href="#">Sub item</a></li>
+                      <li><a href="#">Sub item</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+          </li>
+          <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, sed
+            do eiusmod.</li>
+        </ul>
+      </div>
+      </div>
+
     </section><!-- End About Section -->
 
 
 
     <!-- ======= Skills Section ======= -->
     <section id="skills" class="skills section-bg">
-      <div class="container">
+      <div class="container-fluid">
         <div class="section-title">
           <h2>Skills</h2>
-          <p> <strong>prograss in all programming fields :</strong><br>in javascript server side scripting
-            eg.:node.js
-            and other fremwork also included in javascript prograss </p>
-        </div>
+          <p>
+            programmer prograss in all fields
+          </p>
+          <br>
 
-        <div class="row skills-content">
+          <div class="row skills-content">
 
-          <div class="col-lg-6" data-aos="fade-up">
+            <div class="col-lg-6" data-aos="fade-up">
 
 
 
-            <div class="progress">
-              <span class="skill">HTML<i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress">
+                <span class="skill">HTML<i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                  </div>
                 </div>
               </div>
+
+              <div class="progress">
+                <span class="skill">css<i class="val">70%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">JavaScript(including all JS library) <i class="val">75%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+
             </div>
 
-            <div class="progress">
-              <span class="skill">css<i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
 
-            <div class="progress">
-              <span class="skill">JavaScript(including all JS library) <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+
+
+              <div class="progress">
+                <span class="skill">React/React-native <i class="val">60%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                  </div>
                 </div>
               </div>
+
+              <div class="progress">
+                <span class="skill">Python <i class="val">70%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">java<i class="val">40%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+
             </div>
 
           </div>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-
-
-            <div class="progress">
-              <span class="skill">React/React-native <i class="val">60%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Python <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">java<i class="val">40%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-          </div>
-
         </div>
-
-      </div>
     </section><!-- End Skills Section -->
 
     <!-- ======= Resume Section ======= -->
@@ -900,413 +1061,14 @@
 
       </div>
     </section><!-- End Contact Section -->
-
+    <div class="uk-flex uk-flex-center">
+      <div class="uk-card uk-card-default uk-card-body">Item 1</div>
+      <div class="uk-card uk-card-default uk-card-body uk-margin-left">Item 2</div>
+      <div class="uk-card uk-card-default uk-card-body uk-margin-left">Item 3</div>
+    </div>
 
   </main>
-  <!-- End #main >
 
-
-
-  <div class="menu">
-    <nav class="menu__nav">
-      <ul class="menu__list r-list">
-        <li class="menu__group">
-          <a href="index.html"><i class="bx bx-home"></i><span>Home</span></a>
-        </li>
-        <li class="menu__group">
-          <a href="#about" class="menu__link r-link">About me</a>
-        </li>
-        <li class="menu__group">
-          <a href="#resume" class="menu__link r-link">Services</a>
-        </li>
-        <li class="menu__group">
-          <a href="#contact" class="menu__link r-link">Portfolio</a>
-        </li>
-        <li class="menu__group">
-          <a href="#0" class="menu__link r-link">Blog</a>
-        </li>
-        <li class="menu__group">
-          <a href="#0" class="menu__link r-link">Contacts</a>
-        </li>
-      </ul>
-      <nav class="nav-menu nobita">
-        <ul class="menu__list r-list">
-          <li class="active"><a href="index.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#contact"><i class="bx bx-envelope"></i> Contact</a></li>
-        </ul>
-      </nav>
-  </nav>
-  <button class="menu__toggle r-button" type="button">
-    <span class="menu__hamburger m-hamburger">
-      <span class="m-hamburger__label">
-        <span class="menu__toggle-hint screen-reader">Open menu</span>
-      </span>
-    </span>
-  </button>
-  </div>
-  <style>
-    /*
-!!! This demo is being refactored !!!
-
--- add auto focus on the first item of the navigation when it is shown
--- replace .menu:not(.menu_activated) .menu__list{  display: none; } to hidden
--- use :is pseudo-class to simplify selectors
-
-*/
-    /*
-=====
-DEPENDENCES
-=====
-*/
-
-    /* The component will reset button browser styles */
-
-    .r-button {
-      --uirButtonBackgroundColor: var(--rButtonBackgroundColor, transparent);
-      --uirButtonPadding: var(--rButtonPadding, var(--rButtonPaddingTop, 0) var(--rButtonPaddingRight, 0) var(--rButtonPaddingBottom, 0) var(--rButtonPaddingLeft, 0));
-      --uirButtonBorderWidth: var(--rButtonBorderWidth, 0);
-      --uirButtonBorderStyle: var(--rButtonBorderStyle, solid);
-      --uirButtonBorderColor: var(--rButtonBorderColor, currentColor);
-      --uirButtonFontFamily: var(--rButtonFontFamily, inherit);
-      --uirButtonFontSize: var(--rButtonFontSize, inherit);
-      --uirButtonColor: var(--rButtonColor);
-
-      background-color: var(--uirButtonBackgroundColor);
-      padding: var(--uirButtonPadding);
-
-      border-width: var(--uirButtonBorderWidth);
-      border-style: var(--uirButtonBorderStyle);
-      border-color: var(--uirButtonBorderColor);
-
-      cursor: pointer;
-
-      font-family: var(--uirButtonFontFamily);
-      font-size: var(--uirButtonFontSize);
-    }
-
-    .r-button::-moz-focus-inner,
-    .r-button[type="button"]::-moz-focus-inner,
-    .r-button[type="reset"]::-moz-focus-inner,
-    .r-button[type="submit"]::-moz-focus-inner {
-
-      /* Remove the inner border and padding in Firefox. */
-
-      border-style: none;
-      padding: 0;
-    }
-
-    /* The component will reset browser's styles of link */
-
-    .r-link {
-      --uirLinkDisplay: var(--rLinkDisplay, inline-flex);
-      --uirLinkTextColor: var(--rLinkTextColor);
-      --uirLinkTextDecoration: var(--rLinkTextDecoration, none);
-
-      display: var(--uirLinkDisplay) !important;
-      color: var(--uirLinkTextColor) !important;
-      text-decoration: var(--uirLinkTextDecoration) !important;
-    }
-
-    /* The component will reset browser's styles of list */
-
-    .r-list {
-      --uirListPaddingLeft: var(--rListPaddingLeft, 0);
-      --uirListMarginTop: var(--rListMarginTop, 0);
-      --uirListMarginBottom: var(--rListMarginBottom, 0);
-      --uirListListStyle: var(--rListListStyle, none);
-
-      padding-left: var(--uirListPaddingLeft) !important;
-      margin-top: var(--uirListMarginTop) !important;
-      margin-bottom: var(--uirListMarginBottom) !important;
-      list-style: var(--uirListListStyle) !important;
-    }
-
-    /* Basic styles of the hamburger component */
-
-    .m-hamburger {
-      --uiHamburgerThickness: var(--hamburgerThickness, 4px);
-
-      display: var(--hamburgerDisplay, inline-flex);
-      width: var(--hamburgerWidth, 28px);
-      height: var(--hamburgerHeight, 20px);
-
-      position: relative;
-    }
-
-    .m-hamburger::before,
-    .m-hamburger::after,
-    .m-hamburger__label {
-      width: 100%;
-      height: var(--uiHamburgerThickness);
-      border-radius: var(--hamburgerBorderRadius, 5px);
-      background-color: var(--hamburgerBackgroundColor, currentColor);
-
-      position: absolute;
-      left: 0;
-    }
-
-    .m-hamburger::before,
-    .m-hamburger::after {
-      content: "";
-    }
-
-    .m-hamburger::before {
-      top: 0;
-    }
-
-    .m-hamburger::after {
-      bottom: 0;
-    }
-
-    .m-hamburger__label {
-      /* The calculation of middle hamburger button line position */
-
-      top: calc(50% - calc(var(--uiHamburgerThickness) / 2));
-    }
-
-    /* helper to hide elements that are available only for screen readers. */
-
-    .screen-reader {
-      width: var(--screenReaderWidth, 1px) !important;
-      height: var(--screenReaderHeight, 1px) !important;
-      padding: var(--screenReaderPadding, 0) !important;
-      border: var(--screenReaderBorder, none) !important;
-
-      position: var(--screenReaderPosition, absolute) !important;
-      clip: var(--screenReaderClip, rect(1px, 1px, 1px, 1px)) !important;
-      overflow: var(--screenReaderOverflow, hidden) !important;
-    }
-
-    /*
-=====
-MENU STYLES
-=====
-*/
-
-    .menu {
-      --uiMenuCircleSize: var(--menuCircleSize, 6.25rem);
-      --uiMenuCircleOffset: var(--menuCircleOffset, 1rem);
-      --uiMenuCircleHeight: calc(var(--uiMenuCircleSize) / 2);
-      --uiMenuCircleBackgroundColor: var(--menuCircleBackgroundColor, currentColor);
-
-      --uiMenuHamburgerWidth: var(--menuHamburgerWidth, 1.75rem);
-      --uiMenuHamburgerHeight: var(--menuHamburgerHeight, 1.25rem);
-
-      --rButtonPaddingTop: calc(var(--uiMenuCircleHeight) - var(--uiMenuHamburgerHeight) - var(--uiMenuCircleOffset));
-
-      --hamburgerWidth: var(--uiMenuHamburgerWidth);
-      --hamburgerHeight: var(--uiMenuHamburgerHeight);
-      --hamburgerBackgroundColor: var(--menuHamburgerBackgroundColor, #fff);
-
-      width: 100%;
-
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: fixed;
-      justify-content: center;
-      bottom: 0;
-      left: 0;
-      z-index: var(--menuZindex, 9998);
-    }
-
-    .menu__nav {
-      box-sizing: border-box;
-      width: 100%;
-      height: 0;
-
-      transition: opacity .2s ease-out;
-      opacity: 0;
-
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
-      z-index: 2;
-    }
-
-    .menu__list {
-      width: 100%;
-      max-height: 100%;
-
-      overflow-y: auto;
-      -webkit-overflow-scrolling: touch;
-    }
-
-    .menu__toggle {
-      box-sizing: border-box;
-      width: var(--uiMenuCircleSize);
-      height: var(--uiMenuCircleHeight);
-      flex: none;
-
-      position: relative;
-    }
-
-    .menu__toggle::before {
-      /*
-  1. The font-size property is used to simplify calculations of the element's sizes and position
-  2. The negative value for the bottom property need for hiding half of circle.
-  */
-
-      content: "";
-      width: 1em;
-      height: 1em;
-      font-size: var(--uiMenuCircleSize);
-      /* 1 */
-
-      background-color: var(--uiMenuCircleBackgroundColor);
-      border-radius: 50%;
-
-      position: absolute;
-      bottom: -.5em;
-      /* 2 */
-      left: calc(50% - .5em);
-      z-index: -1;
-
-      will-change: width, height;
-      transition: transform .25s cubic-bezier(0.04, -0.1, 0.29, 0.98),
-        width .25s cubic-bezier(0.04, -0.1, 0.29, 0.98),
-        height .25s cubic-bezier(0.04, -0.1, 0.29, 0.98);
-    }
-
-    /* styles of hamburger's animation */
-
-    .m-hamburger::before,
-    .m-hamburger::after,
-    .m-hamburger__label {
-      transition-timing-function: ease;
-      transition-duration: .15s;
-    }
-
-    .m-hamburger::before,
-    .m-hamburger::after {
-      transition-property: transform;
-    }
-
-    .m-hamburger__label {
-      transition-property: transform, opacity;
-    }
-
-    /*
-=====
-MENU STATES
-=====
-*/
-
-    .menu__toggle:focus {
-      outline: var(--menuHaburgerOutlineOWidth, 2px) solid var(--menuHaburgerOutlineColor);
-      outline-offset: var(--menuHaburgerOutlineOffset, 5px);
-    }
-
-    .menu_activated {
-      height: 100%;
-    }
-
-    .menu_activated .menu__nav {
-      flex-grow: 1;
-      opacity: 1;
-
-      will-change: opacity;
-      transition-duration: .2s;
-      transition-delay: .3s;
-    }
-
-    .menu_activated .menu__toggle::before {
-      width: 100vmax;
-      height: 100vmax;
-      transform: translate3d(-50vh, -50vh, 0) scale(5);
-      transition-duration: 1s;
-    }
-
-    .menu:not(.menu_activated) .menu__list {
-      display: none;
-    }
-
-    .menu_activated .m-hamburger::before {
-      top: 50%;
-      transform: translate3d(0, -50%, 0) rotate(45deg);
-    }
-
-    .menu_activated .m-hamburger::after {
-      transform: translate3d(0, -50%, 0) rotate(135deg);
-      top: 50%;
-    }
-
-    .menu_activated .m-hamburger__label {
-      transform: rotate(-45deg) translate3d(-.285em, -.3em, 0);
-      opacity: 0;
-    }
-
-    /*
-=====
-SETTINGS
-=====
-*/
-
-    :root {
-      --colorWhite: #fff;
-      --colorMain: #140c3a;
-      --menuCircleBackgroundColor: var(--colorMain);
-      --menuHamburgerBackgroundColor: var(--colorWhite);
-      --menuHaburgerOutlineColor: var(--colorMain);
-    }
-
-    .menu_activated {
-      --menuHaburgerOutlineColor: var(--colorWhite);
-    }
-
-    /*
-=====
-DEMO
-=====
-*/
-
-
-    .nobita {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-
-    }
-
-
-    .page {
-      max-width: 380px;
-      padding: 1rem;
-      margin: auto;
-      text-align: center;
-    }
-
-    .page__name {
-      display: block;
-      font-size: 1rem;
-      font-weight: 700;
-    }
-
-    .page__hint {
-      display: block;
-      line-height: 1.45;
-      margin-top: 1rem;
-    }
-
-    .menu__group {
-      --rLinkTextColor: var(--colorWhite);
-
-      padding: .5rem 2rem;
-      font-size: 2rem;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
-
-    a {
-      color: #fff;
-      text-align: center;
-    }
-  </style-->
-
-  <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
       <div class="copyright">
@@ -1318,12 +1080,8 @@ DEMO
     </div>
     </div>
   </footer>
-  <!-- End  Footer >
 
-  <a href="#about" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a-->
 
-  <!-- Vendor JS Files -->
 
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -1337,7 +1095,10 @@ DEMO
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
 
+
+  </script>
 </body>
 
 </html>

@@ -73,8 +73,9 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #ffffffdf;
+  background:none;
   overflow-y: auto;
+  background-color: rgba(255, 255, 255, 0.897);
 }
 span:hover{
   color: #000;
@@ -107,7 +108,7 @@ span:hover{
 #header .profile .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #90d3ff;
+  background: #02eaff;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -163,11 +164,13 @@ span:hover{
 .nav-menu a, .nav-menu a:focus {
   display: flex;
   align-items: center;
-  color: #a8a9b4;
+  color: #404041;
   padding: 12px 15px;
   margin-bottom: 8px;
   transition: 0.3s;
   font-size: 15px;
+
+
 }
 
 .nav-menu a i, .nav-menu a:focus i {
@@ -182,7 +185,7 @@ span:hover{
 }
 
 .nav-menu a:hover i, .nav-menu .active i, .nav-menu .active:focus i, .nav-menu li:hover > a i {
-  color: #149ddd;
+  color: #00fff2;
 }
 
 /* Mobile Navigation */
@@ -195,7 +198,7 @@ span:hover{
   font-size: 24px;
   transition: all 0.4s;
   outline: none !important;
-  background-color: #149ddd;
+  background-color: #0400fffb;
   color: #fff;
   width: 40px;
   height: 40px;
@@ -209,6 +212,7 @@ span:hover{
 
 .mobile-nav-active {
   overflow: hidden;
+
 }
 .mobile-nav-active #header {
   left: 0;
@@ -226,7 +230,7 @@ span:hover{
 
 #hero:before {
   content: "";
-  background: rgba(5, 13, 24, 0.267);
+
   position: absolute;
   bottom: 0;
   top: 0;
@@ -239,7 +243,10 @@ span:hover{
   position: relative;
   z-index: 2;
   min-width: 400px;
-  padding: 3%;
+
+}
+.container-fluid{
+ width:90%
 }
 
 
@@ -257,11 +264,11 @@ span:hover{
   color: #00ccff;
 }
 .hero-container{
-  border: 1px solid rgba(255, 255, 255, 0.301);
+
   border-radius: 10px;
   width: 900px;
-   position: relative;
-   right: 8%;
+  position: relative;
+  right: 0%;
 
 
 }
@@ -294,31 +301,39 @@ span:hover{
   }
 
 }
+.menubutton{
+  display: none;
+}
 
 @media (max-width: 768px) {
 
   .hero-container{
-    width: 100%;
-    text-align: center;
-    border: none;
+    width: 10%;
+text-align: left;
+    border:none;
+
+
+
   }
-  .s{
-    text-align: center;
-    margin-left: 10%;
+  .container-fluid{
+    width:100%;
   }
+.menubutton{
+  display: block;
+}
+
   .image{
     margin-right: 10%;
   }
   .i{
     fill: #000;
-    display: none;
+
+  display: none;
   }
   .box2{
     width: 140px;
   }
-  .git{
-    margin-left: 13%;
-  }
+
   #hero
   {
     height:100vh;
@@ -1149,9 +1164,9 @@ section {
 
 /*-----------github profile card---------*/
 .git{
-  margin-left: 0%;
+margin-left: 0%;
   width:100%;
-color:white;
+  color:white;
 
 
 }
