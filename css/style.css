@@ -1,0 +1,321 @@
+/* ============= nav ================*/
+
+/* ============= flate action button ================*/
+
+.float-action-button{
+  width: 100%;
+  height: 100vh;
+  padding-top: 10%;
+  background-color: #ffffff00;
+  position:fixed;
+  top:0%;
+  z-index: 10
+
+}
+.drower{
+  width: 50px;
+  height: 50px;
+  background-color: #ff1e00;
+  position: fixed;
+  top:90%;
+  right:3%;
+  z-index:9999999
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* abouts section..............*/
+.about{
+  width:60%;
+  height: 600px;
+  background-color: #4882ff;
+  margin-top: 5%;
+border-radius: 0% 100px 100px 0%;
+
+}
+.about-head{
+  margin-left: 10%;
+  padding-top: 2%;
+  color: white;
+}
+.about-body{
+  width:50%;
+  height:400px;
+  background-color: #00ffd5;
+}
+.underline{
+  background-color: #00ffc8;
+  width: 20%;
+  height: 6px;
+}
+.about-card{
+  margin-left: 10%;
+}
+
+
+  /*=========== github ==================*/
+
+.github{
+  background-color: #ffffff;
+  width: 90%;
+  padding: 5%;
+  border-radius: 100px;
+}
+.git {
+  width: 80%;
+}
+
+/*=========================*/
+
+.head-img {
+  background-color: #dee0e0;
+  height: 100vh;
+  width: 100%;
+}
+
+.c {
+  margin-left: 5%;
+  width: 200px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+}
+
+
+
+.color {
+  border: none;
+
+  padding: 3%;
+}
+
+.nav {
+  width: 100%;
+  height: 10%;
+  padding-top: 2%;
+}
+
+.logo {
+  margin-left: 5%;
+  width: 100px;
+}
+
+.item {
+  margin-left: 5%;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 200px;
+  background-color: #f8f6f6;
+}
+
+.item:hover {
+  background-color: #ffffff;
+}
+
+.d {
+  margin-top: 13%;
+}
+
+/*...........css under line animation....................*/
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+  text-decoration: none;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -9px;
+  left: 0;
+  background-color: #00ffd5;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  color: black;
+}
+
+/*======= links style===========*/
+.d {
+  text-decoration: none;
+  color: black;
+
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+
+
+.box {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(251, 251, 251);
+  margin-left: 2%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: x-large;
+
+
+}
+
+.fact {
+  width: 100px;
+  height: 60px;
+  background-color: rgb(251, 251, 251);
+  margin-left: 1%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: x-large;
+}
+
+.h {
+  width: 40%;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+.boxc {
+  width: 150px;
+  height: 150px;
+  background-color: #fbfbff;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+}
+
+.boxc:hover {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.144),
+    0 2px 4px rgba(0, 0, 0, 0.294),
+    0 4px 8px rgba(0, 0, 0, 0.07),
+    0 8px 16px rgba(0, 0, 0, 0.07),
+    0 16px 32px rgba(0, 0, 0, 0.07),
+    0 32px 64px rgba(0, 0, 0, 0.07);
+}
+
+.status {
+  width: 500px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #00ffc8;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+
+/*--------------------------------------------------------------
+# Facts
+--------------------------------------------------------------*/
+@media (max-width: 1900px) {
+  #hero {
+    display: none
+  }
+
+}
+
+
+
+/*===== media screen==========*/
+
+@media (max-width: 768px) {
+  .nav{
+    display: none;
+  }
+
+  .github{
+    width: 100%;
+  }
+  .git {
+    width: 100%;
+  }
+
+  #hero {
+    display: none
+  }
+
+  .h {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  .hero {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .boxc {
+    width: 70px;
+    height: 70px;
+    background-color: #0087ca;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+
+  }
+
+  .cp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .status {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #00ffc8;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+
+}
