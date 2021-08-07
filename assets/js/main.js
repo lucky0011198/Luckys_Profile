@@ -100,18 +100,24 @@ $(document).ready(function () {
       $(".event").append(html);
     }
   );
-
+  $(".hide").hide();
   $(".drower").click(function () {
     var div = $(".drower");
     $(".float-action-button").show();
-    div.animate({ top: "500px", width: "300px", opacity: "0.8" }, "slow");
-    div.animate({ top: "500px", height: "300px", opacity: "0.4" }, "slow");
+    $(".hide").show();
+    $(".menu").hide();
+
+    div.animate({ top: "75%", width: "300px" });
+    div.animate({ top: "75%", height: "150px" });
   }),
     $(".float-action-button").click(function () {
       $(".float-action-button").hide();
+      $(".hide").hide("slow");
+
+      $(".menu").show();
       var div = $(".drower");
-      div.animate({ top: "90%", height: "50px", opacity: "0.4" }, "slow");
-      div.animate({ top: "90%", width: "50px", opacity: "0.8" }, "slow");
+      div.animate({ top: "90%", height: "50px" }, "slow");
+      div.animate({ top: "90%", width: "50px" }, "slow");
     });
 });
 function changecolor() {
