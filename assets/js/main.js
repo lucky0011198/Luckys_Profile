@@ -103,10 +103,12 @@ $(document).ready(function () {
 
   $(".drower").click(function () {
     var div = $(".drower");
+    $(".float-action-button").show();
     div.animate({ top: "500px", width: "300px", opacity: "0.8" }, "slow");
     div.animate({ top: "500px", height: "300px", opacity: "0.4" }, "slow");
   }),
     $(".float-action-button").click(function () {
+      $(".float-action-button").hide();
       var div = $(".drower");
       div.animate({ top: "90%", height: "50px", opacity: "0.4" }, "slow");
       div.animate({ top: "90%", width: "50px", opacity: "0.8" }, "slow");
