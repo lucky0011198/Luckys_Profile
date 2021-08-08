@@ -104,7 +104,7 @@ $(document).ready(function () {
   $(".drower").click(function () {
     var div = $(".drower");
     $(".float-action-button").show();
-    $(".hide").show();
+    $(".hide").show(1000);
     $(".menu").hide();
 
     div.animate({ top: "75%", width: "300px" });
